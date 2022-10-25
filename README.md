@@ -8,55 +8,34 @@
 
 ## 📚 目录结构
 
-├─ alu
-
-│  ├─ src，ALU RTL
-
-│  │  ├─ alu_4bits.v，4位ALU
-
-│  │  ├─ alu_16bits.v，16位ALU
-
-│  │  ├─ alu_32bits.v，32位ALU
-
-│  │  ├─ alu_ref.v，任意位宽ALU参考模型
-
-│  │  └─ cla_component.v，CLA组件模块
-
-│  └─ test，ALU testbench
-
-│  │  ├─ alu_4bits_tb.sv，4位ALU验证
-
-│  │  ├─ alu_32bits_tb_random.sv，32位ALU随机验证
-
-│  │  └─ alu_32bits_tb.sv，32位ALU覆盖验证
-
-├─ cla
-
-│  ├─ src，CLA RTL
-
-│  │  ├─ cla_4bits.v，4位CLA
-
-│  │  ├─ cla_16bits.v，16位CLA
-
-│  │  ├─ cla_32bits.v，32位CLA
-
-│  │  └─ cla_component.v，CLA组件模块
-
-│  └─ test，CLA testbench
-
-│  │  ├─ cla_4bits_tb.sv，4位CLA验证
-
-│  │  ├─ cla_16bits_tb_cover.sv，16位CLA覆盖验证（测试项更少）
-
-│  │  └─ cla_16bits_tb_random.sv，16位CLA随机验证
-
-│  │  └─ cla_16bits_tb.sv，16位CLA覆盖验证
-
-│  │  ├─ cla_32bits_tb_random.sv，32位CLA随机验证
-
-│  │  └─ cla_32bits_tb.sv，32位CLA覆盖验证
-
-└─ docs，文档相关
+<details>   
+    <summary>展开查看</summary>
+    ├─ alu
+	│  ├─ src，ALU RTL
+    │  │  ├─ alu_4bits.v，4位ALU
+    │  │  ├─ alu_16bits.v，16位ALU
+    │  │  ├─ alu_32bits.v，32位ALU
+    │  │  ├─ alu_ref.v，任意位宽ALU参考模型
+    │  │  └─ cla_component.v，CLA组件模块
+    │  └─ test，ALU testbench
+    │  │  ├─ alu_4bits_tb.sv，4位ALU验证
+    │  │  ├─ alu_32bits_tb_random.sv，32位ALU随机验证
+    │  │  └─ alu_32bits_tb.sv，32位ALU覆盖验证
+    ├─ cla
+    │  ├─ src，CLA RTL
+    │  │  ├─ cla_4bits.v，4位CLA
+    │  │  ├─ cla_16bits.v，16位CLA
+    │  │  ├─ cla_32bits.v，32位CLA
+    │  │  └─ cla_component.v，CLA组件模块
+    │  └─ test，CLA testbench
+    │  │  ├─ cla_4bits_tb.sv，4位CLA验证
+    │  │  ├─ cla_16bits_tb_cover.sv，16位CLA覆盖验证（测试项更少）
+    │  │  └─ cla_16bits_tb_random.sv，16位CLA随机验证
+    │  │  └─ cla_16bits_tb.sv，16位CLA覆盖验证
+    │  │  ├─ cla_32bits_tb_random.sv，32位CLA随机验证
+    │  │  └─ cla_32bits_tb.sv，32位CLA覆盖验证
+    └─ docs，文档相关
+</details>
 
 ## 🛠️ CLA与ALU结构
 
