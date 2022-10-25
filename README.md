@@ -124,9 +124,9 @@ ALU在CLA基础上添加 $S[3:0]$、 $M$信号，通过选择控制信号 `{S,Ci
 | 0       | 1       | 1       | 1       | 1          | 0     | $\neg A\lor\neg B$                                | nand      |
 | 1       | 0       | 0       | 0       | 1          | 0     | $A\land B$                                        | and       |
 | 1       | 0       | 0       | 1       | 1          | 0     | $A\land B\lor\neg A\land \neg B$                  | xnor      |
-| 1       | 0       | 1       | 0       | 1          | 0     | $B$                                               | 传送$B$ |
+| 1       | 0       | 1       | 0       | 1          | 0     | $B$                                               | 传送 $B$ |
 | 1       | 0       | 1       | 1       | 1          | 0     | $A\land B\lor\neg A\land B\lor\neg A\land \neg B$ | not or    |
-| 1       | 1       | 0       | 0       | 1          | 0     | $A$                                               | 传送$A$ |
+| 1       | 1       | 0       | 0       | 1          | 0     | $A$                                               | 传送 $A$ |
 | 1       | 1       | 0       | 1       | 1          | 0     | $A\land B\lor A\land\neg B\lor\neg A\land\neg B$  | or not    |
 | 1       | 1       | 1       | 0       | 1          | 0     | $A\land B\lor A\land\neg B\lor\neg A\land B$      | or        |
 | 1       | 1       | 1       | 1       | 1          | 0     | 1                                                   | 置全1     |
@@ -168,7 +168,7 @@ $$
 
 ## 🧪 CLA与ALU验证
 
-### 🔬 CLA验证
+### 🔭 CLA验证
 
 iverilog命令：
 
@@ -179,7 +179,7 @@ iverilog -g2012 -o vvp_cla_32bits_tb cla_32bits_tb.sv ../src/*
 ./vvp_cla_32bits_tb
 ```
 
-- 对4位CLA验证：由于位宽较少，可遍历操作数 $A$、 $B$及进位输入$c_i$，判断计算结果与真实结果是否相同。
+- 对4位CLA验证：由于位宽较少，可遍历操作数 $A$、 $B$及进位输入 $c_i$，判断计算结果与真实结果是否相同。
 - 对16位CLA验证：
 
   - `cla_16bits_tb.sv` 为全覆盖验证，但由于位宽较多，遍历操作数 $A$、 $B$及进位输入 $c_i$耗时很长，修改其中循环遍历的上限为2^12^较好。
@@ -194,7 +194,7 @@ iverilog -g2012 -o vvp_cla_32bits_tb cla_32bits_tb.sv ../src/*
 
 ALU参考模型位于 `/alu/src/alu_ref.v`，其操作通过 `case ` 实现对不同选择控制信号 `{S,Cin,M}` 的指令执行，因此可作为ALU的参考模型；进位输出 $C$根据 $M$、 $Cin$的取值分别计算得出。其他的逻辑标志位算法其实与前述ALU设计相同。
 
-### 🔬 ALU验证
+### 🔭 ALU验证
 
 iverilog命令：
 
