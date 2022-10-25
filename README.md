@@ -10,7 +10,7 @@
 
 <details>   
 	<summary>展开查看</summary>  
-
+<pre><code>
 ├─ alu
 │  ├─ src，ALU RTL
 │  │  ├─ alu_4bits.v，4位ALU
@@ -36,7 +36,7 @@
 │  │  ├─ cla_32bits_tb_random.sv，32位CLA随机验证
 │  │  └─ cla_32bits_tb.sv，32位CLA覆盖验证
 └─ docs，文档相关
-
+</code></pre>
 </details>
 
 
