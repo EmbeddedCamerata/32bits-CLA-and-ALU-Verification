@@ -117,9 +117,9 @@ ALU在CLA基础上添加 $S[3:0]$、 $M$信号，通过选择控制信号 `{S,Ci
 | 0       | 0       | 0       | 0       | 1          | 0     | 0                                                   | 置全0     |
 | 0       | 0       | 0       | 1       | 1          | 0     | $\neg A\land\neg B$                               | nor       |
 | 0       | 0       | 1       | 0       | 1          | 0     | $\neg A\land B$                                   | not and   |
-| 0       | 0       | 1       | 1       | 1          | 0     | $\neg A$                                          | not$A$  |
+| 0       | 0       | 1       | 1       | 1          | 0     | $\neg A$                                          | not $A$ |
 | 0       | 1       | 0       | 0       | 1          | 0     | $A\land\neg B$                                    | and not   |
-| 0       | 1       | 0       | 1       | 1          | 0     | $\neg B$                                          | not$B$  |
+| 0       | 1       | 0       | 1       | 1          | 0     | $\neg B$                                          | not $B$ |
 | 0       | 1       | 1       | 0       | 1          | 0     | $A\land\neg B\lor \neg A\land B$                  | xor       |
 | 0       | 1       | 1       | 1       | 1          | 0     | $\neg A\lor\neg B$                                | nand      |
 | 1       | 0       | 0       | 0       | 1          | 0     | $A\land B$                                        | and       |
